@@ -134,7 +134,7 @@
                             <li>
                                 <a href="#testimonials">Testimoni</a>
                             </li>
-                            <li><a href="{{ route('contact') }}">Contact</a></li>
+                            <li><a href="{{ route('contact') }}">Kontak</a></li>
                         </ul>
                     </nav>
                 </div>
