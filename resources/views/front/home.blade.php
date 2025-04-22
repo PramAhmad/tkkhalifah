@@ -18,11 +18,11 @@
                         class="fa-light fa-arrow-right-long"></i></a>
                 <div class="banner__video-btn ml-20">
                     <div class="video-btn video-pulse">
-                        <a class="video-popup" href="https://www.youtube.com/watch?v=cBGEn_L_fxs"><i
+                        <a class="video-popup" href="https://www.youtube.com/embed/p5wyPm2v5CA?si=YWDnOdNqtsMVc4L-"><i
                                 class="fa-solid fa-play"></i></a>
                     </div>
                 </div>
-                <h5 class="d-none d-sm-block">Paly Video</h5>
+                <h5 class="d-none d-sm-block">Play Video</h5>
             </div>
         </div>
     </div>
