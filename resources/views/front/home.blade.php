@@ -14,7 +14,7 @@
             <p class="mt-20 wow fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">Pastikan anak anda aman dan tumbuh untuk masa depan yang lebih baik</p>
             <div class="d-flex align-items-center gap-3 mt-50 wow fadeInRight" data-wow-delay="600ms"
                 data-wow-duration="1500ms">
-                <a href="course.html" class="btn-one">Lihat Paket<i
+                <a href="#courses" class="btn-one">Lihat Paket<i
                         class="fa-light fa-arrow-right-long"></i></a>
                 <div class="banner__video-btn ml-20">
                     <div class="video-btn video-pulse">
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="banner-seven__image">
-        <img class="w-100" src="{{ asset('learnit/assets/images/banner/banner-seven-hero.png') }}" alt="image">
+        <img class="w-100" src="{{ asset('images/home.jpeg') }}" alt="image">
         <img class="al-quran animation__arryUpDown" src="{{ asset('learnit/assets/images/shape/banner-seven-quran.png') }}"
             alt="image">
     </div>
@@ -43,8 +43,8 @@
                         <img class="about-dots sway__animation" src="{{ asset('learnit/assets/images/shape/about-dots.png') }}"
                             alt="shape">
                         <img class="about-circle" src="{{ asset('learnit/assets/images/shape/about-circle.png') }}" alt="shape">
-                        <img src="{{ asset('learnit/assets/images/about/about-image1.png') }}" alt="image">
-                        <img class="sm-image" src="{{ asset('learnit/assets/images/about/about-image2.png') }}" alt="image">
+                        <img src="{{ asset('images/about1.jpeg') }}" alt="image">
+                        <img class="sm-image" src="{{ asset('images/about2.jpeg') }}" alt="image">
                         <div class="count-info">
                             <h5 class="primary-color fs-28"><span class="count primary-color">25</span>+</h5>
                             <span class="fs-14">Years Experience</span>
@@ -56,9 +56,12 @@
                 <div class="about__right-wrp">
                     <div class="section-header">
                         <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Tentang Kami</h5>
-                        <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Rumah Untuk Tumbuh Bagi Anak Anak
-                        </h2>
-                        <p class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, itaque iusto omnis saepe aut asperiores? Reiciendis omnis ipsa ducimus quidem corporis velit nesciunt tenetur delectus?</p>
+                        <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">MENJADI SALAH SATU TK DAN PG ISLAM FAVORIT
+                            DI INDONESIA</h2>
+                        <p class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Memastikan Anak Bercita-cita Menjadi Moeslem Entrepreneurship Dengan Keteladanan Nabi Muhammad SAW, Santun Dan Mandiri.
+                            Membantu Pemerintah Dalam Menyediakan Program Pendidikan Anak Usia Dini
+(PAUD) Yang Berkualitas untuk Meningkatkan Kualitas Sumber Daya Manusia Dalam Rangka Mewujudkan Pendidikan Nasional, yaitu Mencerdaskan Kehidupan Bangsa dan Mengembangkan Manusia Indonesia Seutuhnya.
+                        </p>
                     </div>
                     <div class="about__right-part mt-30 wow fadeInDown" data-wow-delay="200ms"
                         data-wow-duration="1500ms">
@@ -68,7 +71,7 @@
                             </div>
                             <div>
                                 <h4>Educator Support</h4>
-                                <p class="mt-10">Elit Aenean scelerisque vitae consequat the.</p>
+                                <p class="mt-10">Menjalin hubungan langsung dengan anak</p>
                             </div>
                         </div>
                         <div class="about__info">
@@ -77,7 +80,7 @@
                             </div>
                             <div>
                                 <h4>Flexible Classes</h4>
-                                <p class="mt-10">Elit Aenean scelerisque vitae consequat the.</p>
+                                <p class="mt-10">Mempunyai kelas yang flexible untuk anak.</p>
                             </div>
                         </div>
                     </div>
@@ -271,7 +274,7 @@
             <img src="{{ asset('learnit/assets/images/video/video-seven-image.png') }}" alt="image">
             <div class="banner-video__video-btn">
                 <div class="video-btn video-pulse">
-                    <a class="video-popup" href="https://www.youtube.com/watch?v=cBGEn_L_fxs"><i
+                    <a class="video-popup" href="https://youtu.be/p5wyPm2v5CA?si=2jgoLyCla9rHWVx7"><i
                             class="fa-solid fa-play"></i></a>
                 </div>
             </div>

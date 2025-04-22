@@ -101,7 +101,8 @@
     <header class="header-area header-two-area">
         <div class="container">
             <div class="header__main header-two__main">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo" style="width: 80px;">
+                    <img src="{{ asset('images/logo.png') }}" alt="logo">
                 </a>
                 <div class="main-menu">
                     <nav>
@@ -175,7 +176,7 @@
     <div class="sidebar-area offcanvas offcanvas-end" id="menubar">
         <div class="offcanvas-header">
             <a href="{{ url('/') }}" class="logo">
-                <img src="{{ asset('learnit/assets/images/logo/logo-light.svg') }}" alt="logo">
+                <img src="{{ asset('images/logo.png') }}" alt="logo">
             </a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i
                     class="fa-regular fa-xmark"></i></button>
@@ -273,9 +274,9 @@
             <div class="footer__wrp pt-100 pb-100">
                 <div class="footer__item footer-about wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <a href="{{ url('/') }}" class="logo mb-30">
-                        <img src="{{ asset('learnit/assets/images/logo/logo.svg') }}" alt="logo">
+                        <img src="{{ asset('images/logo.png') }}" alt="logo">
                     </a>
-                    <p>HMSI Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, corrupti.</p>
+                    <p>TkKhalifah memberi rumah untuk anak anak.</p>
                     <ul class="mt-25">
                         <li>
                             <svg class="me-1" width="16" height="20" viewBox="0 0 16 20" fill="none"
