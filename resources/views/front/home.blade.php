@@ -452,7 +452,7 @@ data-background="{{ asset('learnit/assets/images/bg/ellipse-bg.png') }}">
     </div>
     <div class="container">
         <div class="section-header mb-60 text-center">
-            <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">TESTIMONIALS</h5>
+            <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Ulasan</h5>
             <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"> Apa Yang Mereka Katakan tentang TK Khalifah</h2>
         </div>
         <div class="swiper testimonial-seven__slider">

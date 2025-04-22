@@ -132,7 +132,7 @@
                                 <a href="#activities">Aktivitas</a>
                             </li>
                             <li>
-                                <a href="#testimonials">Testimoni</a>
+                                <a href="#testimonials">Ulasan</a>
                             </li>
                             <li><a href="{{ route('contact') }}">Kontak</a></li>
                         </ul>
@@ -202,7 +202,7 @@
                         </ul>
                     </li>
                     <li><a href="#activities">Aktivitas</a></li>
-                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#testimonials">Ulasan</a></li>
                     <li><a href="{{ route('contact') }}">Kontak</a></li>
                     <li><a href="{{ route('pendaftaran.index') }}" class="highlight-item">Daftar Sekarang</a></li>
                 </ul>
@@ -308,7 +308,7 @@
                         <li><a href="#about"><i class="fa-regular fa-angles-right me-1"></i>Tentang Kami</a></li>
                         <li><a href="#courses"><i class="fa-regular fa-angles-right me-1"></i>Akademik</a></li>
                         <li><a href="#activities"><i class="fa-regular fa-angles-right me-1"></i>Aktivitas</a></li>
-                        <li><a href="#testimonials"><i class="fa-regular fa-angles-right me-1"></i>Testimoni</a></li>
+                        <li><a href="#testimonials"><i class="fa-regular fa-angles-right me-1"></i>Ulasan</a></li>
                     </ul>
                 </div>
                 <div class="footer__item item-sm wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
