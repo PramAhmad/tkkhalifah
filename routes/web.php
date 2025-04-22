@@ -9,8 +9,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // category
 Route::put('/category/{category}', [CategoryController::class, 'update'])->name('front.category');
-
+Route::get('/activity', [ActivityController::class, 'index'])->name('activity.index');
 Route::get('/activity/{activity}', [ActivityController::class, 'show'])->name('activity.show');
+
 // contact
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/contact', [HomeController::class, 'storeContact'])->name('contact.store');
