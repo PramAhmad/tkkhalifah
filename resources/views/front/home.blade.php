@@ -271,10 +271,10 @@
 <div class="banner-video-seven-area pt-120">
     <div class="container">
         <div class="banner-video-seven__wrp image">
-            <img src="{{ asset('learnit/assets/images/video/video-seven-image.png') }}" alt="image">
+            <img src="{{ asset('images/bannervideo.jpeg') }}" alt="image">
             <div class="banner-video__video-btn">
                 <div class="video-btn video-pulse">
-                    <a class="video-popup" href="https://youtu.be/p5wyPm2v5CA?si=2jgoLyCla9rHWVx7"><i
+                    <a class="video-popup" href="https://www.youtube.com/embed/p5wyPm2v5CA?si=YWDnOdNqtsMVc4L-"><i
                             class="fa-solid fa-play"></i></a>
                 </div>
             </div>

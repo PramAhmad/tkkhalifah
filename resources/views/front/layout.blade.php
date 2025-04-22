@@ -82,7 +82,7 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <a href="#0">info@example.com</a>
+                        <a href="#0">tkkhalifahtasikmalaya@yahoo.com</a>
                     </li>
                 </ul>
                 <ul class="socila-link">
@@ -215,7 +215,7 @@
                     </li>
                     <li class="py-2"><i class="fa-solid fa-phone-volume"></i> <a href="tel:+628591348483542">+62 859 134 848 3542</a>
                     </li>
-                    <li><i class="fa-solid fa-paper-plane"></i> <a href="mailto:info@example.com">info@example.com</a>
+                    <li><i class="fa-solid fa-paper-plane"></i> <a href="mailto:tkkhalifahtasikmalaya@yahoo.com">tkkhalifahtasikmalaya@yahoo.com</a>
                     </li>
                 </ul>
             </div>
