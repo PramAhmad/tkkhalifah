@@ -121,7 +121,7 @@
                                     @endphp
                                     @foreach ($categories as $category)
                                     <li>
-                                        <a href="{{ route('front.category', $category->id) }}">
+                                        <a href="#courses">
                                             {{ $category->name }}
                                         </a>
                                     </li>
