@@ -84,8 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="about.html" class="btn-one mt-50 wow fadeInDown" data-wow-delay="200ms"
-                        data-wow-duration="1500ms">About Us<i class="fa-light fa-arrow-right-long"></i></a>
+
                 </div>
             </div>
         </div>

@@ -108,7 +108,7 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="{{ url('/') }}">Home</a>
+                                <a href="{{ url('/') }}">Beranda</a>
                             </li>
                             <li>
                                 <a href="#about">Tentang Kami</a>
@@ -184,7 +184,7 @@
         <div class="offcanvas-body sidebar__body">
             <div class="mobile-menu overflow-hidden">
                 <ul>
-                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="{{ url('/') }}">Beranda</a></li>
                     <li><a href="#about">Tentang Kami</a></li>
                     <li>
                         <a href="#courses">Akademik <i class="fa-solid fa-angle-down"></i></a>
@@ -203,13 +203,13 @@
                     </li>
                     <li><a href="#activities">Aktivitas</a></li>
                     <li><a href="#testimonials">Testimoni</a></li>
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
+                    <li><a href="{{ route('contact') }}">Kontak</a></li>
                     <li><a href="{{ route('pendaftaran.index') }}" class="highlight-item">Daftar Sekarang</a></li>
                 </ul>
             </div>
             
             <div class="sidebar__contact-info mt-30">
-                <h5 class="text-white mb-20">Contact Info</h5>
+                <h5 class="text-white mb-20">Kontak Info</h5>
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i> <a href="#0">Tasikmalaya</a>
                     </li>
@@ -304,7 +304,7 @@
                 <div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <h3 class="footer-title">Menu</h3>
                     <ul>
-                        <li><a href="{{ url('/') }}"><i class="fa-regular fa-angles-right me-1"></i>Home</a></li>
+                        <li><a href="{{ url('/') }}"><i class="fa-regular fa-angles-right me-1"></i>Beranda</a></li>
                         <li><a href="#about"><i class="fa-regular fa-angles-right me-1"></i>Tentang Kami</a></li>
                         <li><a href="#courses"><i class="fa-regular fa-angles-right me-1"></i>Akademik</a></li>
                         <li><a href="#activities"><i class="fa-regular fa-angles-right me-1"></i>Aktivitas</a></li>
