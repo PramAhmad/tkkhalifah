@@ -19,6 +19,8 @@ class ActivityResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-calendar';
 
     protected static ?string $navigationLabel = 'Activities';
+    protected static ?string $navigationGroup = 'Content Management';
+
 
     public static function getPermissionPrefixes(): array
     {

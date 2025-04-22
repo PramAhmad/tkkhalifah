@@ -20,6 +20,8 @@ class FeatureResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-puzzle-piece';
 
     protected static ?string $navigationLabel = 'Features';
+    protected static ?string $navigationGroup = 'Content Management';
+
 
     public static function getPermissionPrefixes(): array
     {

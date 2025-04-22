@@ -9,6 +9,7 @@ class Contact extends Model
 {
     /** @use HasFactory<\Database\Factories\ContactFactory> */
     use HasFactory;
+    protected $table = 'contacts';
 
     // add fillable
     protected $fillable = ['name',
@@ -20,4 +21,6 @@ class Contact extends Model
     protected $guarded = ['id'];
     // add hidden
     protected $hidden = ['created_at', 'updated_at'];
+
+
 }

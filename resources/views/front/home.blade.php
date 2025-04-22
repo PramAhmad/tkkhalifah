@@ -1,3 +1,4 @@
+<!-- filepath: /home/pram/project/kampus/kaido-kit/resources/views/front/home.blade.php -->
 @extends('front.layout')
 
 @section('content')
@@ -32,67 +33,64 @@
     </div>
 </section>
 
-   
-        <!-- About area start here -->
-        <section class="about-area pt-120 pb-120">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-xl-5 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="about__left-part">
-                            <div class="about__image">
-                                <img class="about-dots sway__animation" src="{{ asset('learnit/assets/images/shape/about-dots.png') }}"
-                                    alt="shape">
-                                <img class="about-circle" src="{{ asset('learnit/assets/images/shape/about-circle.png') }}" alt="shape">
-                                <img src="{{ asset('learnit/assets/images/about/about-image1.png') }}" alt="image">
-                                <img class="sm-image" src="{{ asset('learnit/assets/images/about/about-image2.png') }}" alt="image">
-                                <div class="count-info">
-                                    <h5 class="primary-color fs-28"><span class="count primary-color">25</span>+</h5>
-                                    <span class="fs-14">Years Experience</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7">
-                        <div class="about__right-wrp">
-                            <div class="section-header">
-                                <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Tentang Kami</h5>
-                                <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Rumah Untuk Tumbuh Bagi Anak Anak
-                                </h2>
-                                <p class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, itaque iusto omnis saepe aut asperiores? Reiciendis omnis ipsa ducimus quidem corporis velit nesciunt tenetur delectus?</p>
-                            </div>
-                            <div class="about__right-part mt-30 wow fadeInDown" data-wow-delay="200ms"
-                                data-wow-duration="1500ms">
-                                <div class="about__info">
-                                    <div class="icon bg__1">
-                                        <img src="{{ asset('learnit/assets/images/icon/about-icon1.png') }}" alt="icon">
-                                    </div>
-                                    <div>
-                                        <h4>Educator Support</h4>
-                                        <p class="mt-10">Elit Aenean scelerisque vitae consequat the.</p>
-                                    </div>
-                                </div>
-                                <div class="about__info">
-                                    <div class="icon bg__2">
-                                        <img src="{{ asset('learnit/assets/images/icon/about-icon2.png') }}" alt="icon">
-                                    </div>
-                                    <div>
-                                        <h4>Flexible Classes</h4>
-                                        <p class="mt-10">Elit Aenean scelerisque vitae consequat the.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="about.html" class="btn-one mt-50 wow fadeInDown" data-wow-delay="200ms"
-                                data-wow-duration="1500ms">About Us<i class="fa-light fa-arrow-right-long"></i></a>
+<!-- About area start here -->
+<section id="about" class="about-area pt-120 pb-120">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-xl-5 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="about__left-part">
+                    <div class="about__image">
+                        <img class="about-dots sway__animation" src="{{ asset('learnit/assets/images/shape/about-dots.png') }}"
+                            alt="shape">
+                        <img class="about-circle" src="{{ asset('learnit/assets/images/shape/about-circle.png') }}" alt="shape">
+                        <img src="{{ asset('learnit/assets/images/about/about-image1.png') }}" alt="image">
+                        <img class="sm-image" src="{{ asset('learnit/assets/images/about/about-image2.png') }}" alt="image">
+                        <div class="count-info">
+                            <h5 class="primary-color fs-28"><span class="count primary-color">25</span>+</h5>
+                            <span class="fs-14">Years Experience</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- About area end here -->
+            <div class="col-xl-7">
+                <div class="about__right-wrp">
+                    <div class="section-header">
+                        <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Tentang Kami</h5>
+                        <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Rumah Untuk Tumbuh Bagi Anak Anak
+                        </h2>
+                        <p class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, itaque iusto omnis saepe aut asperiores? Reiciendis omnis ipsa ducimus quidem corporis velit nesciunt tenetur delectus?</p>
+                    </div>
+                    <div class="about__right-part mt-30 wow fadeInDown" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">
+                        <div class="about__info">
+                            <div class="icon bg__1">
+                                <img src="{{ asset('learnit/assets/images/icon/about-icon1.png') }}" alt="icon">
+                            </div>
+                            <div>
+                                <h4>Educator Support</h4>
+                                <p class="mt-10">Elit Aenean scelerisque vitae consequat the.</p>
+                            </div>
+                        </div>
+                        <div class="about__info">
+                            <div class="icon bg__2">
+                                <img src="{{ asset('learnit/assets/images/icon/about-icon2.png') }}" alt="icon">
+                            </div>
+                            <div>
+                                <h4>Flexible Classes</h4>
+                                <p class="mt-10">Elit Aenean scelerisque vitae consequat the.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn-one mt-50 wow fadeInDown" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">About Us<i class="fa-light fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About area end here -->
 
-
-     <!-- filepath: /home/pram/project/kampus/kaido-kit/resources/views/front/home.blade.php -->
-<section class="courses-nine-area pt-120 pb-120 sub-bg">
+<section id="courses" class="courses-nine-area pt-120 pb-120 sub-bg">
     <div class="courses-nine__arry1 sway__animation">
         <img src="{{ asset('learnit/assets/images/shape/course-nine-arry-left.png') }}" alt="shape">
     </div>
@@ -197,196 +195,195 @@
         </div>
     </div>
 </section>
-        <!-- Faq area start here -->
-        <section class="faq-six-area sub-bg-two pt-120 pb-120">
-            <div class="faq-six__shape1">
-                <img class="animation__goAll3" src="{{ asset('learnit/assets/images/shape/faq-six-shape1.png') }}" alt="shape">
-            </div>
-            <div class="faq-six__shape2">
-                <img class="animation__rotateY" src="{{ asset('learnit/assets/images/shape/faq-six-shape2.png') }}" alt="shape">
-            </div>
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="section-header mb-40">
-                            <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">FAQ’S</h5>
-                            <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Kami Selalu Memberi Pengalaman Yang Baik Untuk Orangtua dan Anak-anak</h2>
-                        </div>
-                        <div class="accordion" id="accordionExample">
-<div class="accordion" id="accordionExample">
-    @forelse(App\Models\Faq::where('is_active', true)->orderBy('order')->get() as $index => $faq)
-        <div class="accordion-item shadow border-none wow fadeInDown" data-wow-delay="{{ $index * 100 }}ms"
-            data-wow-duration="1500ms">
-            <h2 class="accordion-header" id="heading{{ $index }}">
-                <button class="accordion-button {{ $index === 0 ? '' : 'collapsed' }}" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse{{ $index }}" aria-expanded="{{ $index === 0 ? 'true' : 'false' }}" aria-controls="collapse{{ $index }}">
-                    {{ $faq->question }}
-                </button>
-            </h2>
-            <div id="collapse{{ $index }}" class="accordion-collapse collapse {{ $index === 0 ? 'show' : '' }}" aria-labelledby="heading{{ $index }}"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <p>{!! $faq->answer !!}</p>
-                </div>
-            </div>
-        </div>
-    @empty
-        <div class="accordion-item shadow border-none wow fadeInDown" data-wow-delay="00ms"
-            data-wow-duration="1500ms">
-            <h2 class="accordion-header" id="headingDefault">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseDefault" aria-expanded="true" aria-controls="collapseDefault">
-                    Belum ada FAQ yang tersedia
-                </button>
-            </h2>
-            <div id="collapseDefault" class="accordion-collapse collapse show" aria-labelledby="headingDefault"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <p>Silakan tambahkan FAQ melalui panel admin.</p>
-                </div>
-            </div>
-        </div>
-    @endforelse
-</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-2 wow fadeInLeft" data-wow-delay="200ms"
-                        data-wow-duration="1500ms">
-                        <div class="faq-six__image image">
-                            <img src="{{ asset('images/faq.jpeg') }}" alt="image">
-                            <img class="shape animation__floatBob" src="{{ asset('learnit/assets/images/shape/faq-six-image-shape.png') }}"
-                                alt="shape">
-                            <img class="dots animation__floatBob" src="{{ asset('learnit/assets/images/shape/faq-six-image-shape-dots.png') }}"
-                                alt="shape">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Faq area end here -->
-        <!-- Banner video area start here -->
-        <div class="banner-video-seven-area pt-120">
-            <div class="container">
-                <div class="banner-video-seven__wrp image">
-                    <img src="{{ asset('learnit/assets/images/video/video-seven-image.png') }}" alt="image">
-                    <div class="banner-video__video-btn">
-                        <div class="video-btn video-pulse">
-                            <a class="video-popup" href="https://www.youtube.com/watch?v=cBGEn_L_fxs"><i
-                                    class="fa-solid fa-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Banner video area end here -->
 
-        <!-- Team area start here -->
-        <section class="team-seven-area sub-bg-two pt-100 pb-120 bg-image"
-            data-background="{{ asset('learnit/assets/images/bg/team-seven-bg.png') }}">
-            <div class="container">
-                <div class="d-flex align-items-center justify-content-between gap-4 flex-wrap mb-60">
-                    <div class="section-header">
-                        <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Tenaga Pengajar</h5>
-                        <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Bersama Tenaga Profesional
-                        </h2>
-                    </div>
-                    <div class="d-flex align-items-center gap-3 wow fadeInUp" data-wow-delay="400ms"
-                        data-wow-duration="1500ms">
-                        <button class="arry-prev team-two__arry-prev"><i
-                                class="fa-light fa-arrow-left-long"></i></button>
-                        <button class="arry-next team-two__arry-next active"><i
-                                class="fa-light fa-arrow-right-long"></i></button>
+<!-- Faq area start here -->
+<section class="faq-six-area sub-bg-two pt-120 pb-120">
+    <div class="faq-six__shape1">
+        <img class="animation__goAll3" src="{{ asset('learnit/assets/images/shape/faq-six-shape1.png') }}" alt="shape">
+    </div>
+    <div class="faq-six__shape2">
+        <img class="animation__rotateY" src="{{ asset('learnit/assets/images/shape/faq-six-shape2.png') }}" alt="shape">
+    </div>
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="section-header mb-40">
+                    <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">FAQ'S</h5>
+                    <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Kami Selalu Memberi Pengalaman Yang Baik Untuk Orangtua dan Anak-anak</h2>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="accordionExample">
+                        @forelse(App\Models\Faq::where('is_active', true)->orderBy('order')->get() as $index => $faq)
+                            <div class="accordion-item shadow border-none wow fadeInDown" data-wow-delay="{{ $index * 100 }}ms"
+                                data-wow-duration="1500ms">
+                                <h2 class="accordion-header" id="heading{{ $index }}">
+                                    <button class="accordion-button {{ $index === 0 ? '' : 'collapsed' }}" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse{{ $index }}" aria-expanded="{{ $index === 0 ? 'true' : 'false' }}" aria-controls="collapse{{ $index }}">
+                                        {{ $faq->question }}
+                                    </button>
+                                </h2>
+                                <div id="collapse{{ $index }}" class="accordion-collapse collapse {{ $index === 0 ? 'show' : '' }}" aria-labelledby="heading{{ $index }}"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>{!! $faq->answer !!}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @empty
+                            <div class="accordion-item shadow border-none wow fadeInDown" data-wow-delay="00ms"
+                                data-wow-duration="1500ms">
+                                <h2 class="accordion-header" id="headingDefault">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseDefault" aria-expanded="true" aria-controls="collapseDefault">
+                                        Belum ada FAQ yang tersedia
+                                    </button>
+                                </h2>
+                                <div id="collapseDefault" class="accordion-collapse collapse show" aria-labelledby="headingDefault"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Silakan tambahkan FAQ melalui panel admin.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforelse
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 wow fadeInLeft" data-wow-delay="200ms"
+                data-wow-duration="1500ms">
+                <div class="faq-six__image image">
+                    <img src="{{ asset('images/faq.jpeg') }}" alt="image">
+                    <img class="shape animation__floatBob" src="{{ asset('learnit/assets/images/shape/faq-six-image-shape.png') }}"
+                        alt="shape">
+                    <img class="dots animation__floatBob" src="{{ asset('learnit/assets/images/shape/faq-six-image-shape-dots.png') }}"
+                        alt="shape">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Faq area end here -->
+
+<!-- Banner video area start here -->
+<div class="banner-video-seven-area pt-120">
+    <div class="container">
+        <div class="banner-video-seven__wrp image">
+            <img src="{{ asset('learnit/assets/images/video/video-seven-image.png') }}" alt="image">
+            <div class="banner-video__video-btn">
+                <div class="video-btn video-pulse">
+                    <a class="video-popup" href="https://www.youtube.com/watch?v=cBGEn_L_fxs"><i
+                            class="fa-solid fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner video area end here -->
+
+<!-- Team area start here -->
+<section id="team" class="team-seven-area sub-bg-two pt-100 pb-120 bg-image"
+    data-background="{{ asset('learnit/assets/images/bg/team-seven-bg.png') }}">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between gap-4 flex-wrap mb-60">
+            <div class="section-header">
+                <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Tenaga Pengajar</h5>
+                <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Bersama Tenaga Profesional
+                </h2>
+            </div>
+            <div class="d-flex align-items-center gap-3 wow fadeInUp" data-wow-delay="400ms"
+                data-wow-duration="1500ms">
+                <button class="arry-prev team-two__arry-prev"><i
+                        class="fa-light fa-arrow-left-long"></i></button>
+                <button class="arry-next team-two__arry-next active"><i
+                        class="fa-light fa-arrow-right-long"></i></button>
+            </div>
+        </div>
+        <div class="swiper team-four__slider">
+            <div class="swiper-wrapper">
                 <div class="swiper team-four__slider">
                     <div class="swiper-wrapper">
-               <!-- filepath: /home/pram/project/kampus/kaido-kit/resources/views/front/home.blade.php -->
-<div class="swiper team-four__slider">
-    <div class="swiper-wrapper">
-        @forelse(App\Models\User::take(6)->get() as $instructor)
-        <div class="swiper-slide">
-            <div class="team-seven__item">
-<div class="team-seven__image image">
-    <div style="height: 380px; overflow: hidden; border-radius: 10px;">
-        @if($instructor->avatar_url)
-            <img src="{{ asset('storage/' . $instructor->avatar_url) }}" alt="{{ $instructor->name }}" 
-                 style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
-        @else
-            <img src="{{ asset('learnit/assets/images/team/team-seven-image1.jpg') }}" alt="Default instructor image"
-                 style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
-        @endif
-    </div>
-    <div class="team-two__share">
-        <a class="share-icon" href="#0"><i class="fa-light fa-share-nodes"></i></a>
-        <ul>
-            @if($instructor->facebook_url)
-            <li>
-                <a href="{{ $instructor->facebook_url }}"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            @endif
-            @if($instructor->instagram_url)
-            <li>
-                <a href="{{ $instructor->instagram_url }}"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            @endif
-            @if($instructor->linkedin_url)
-            <li>
-                <a href="{{ $instructor->linkedin_url }}"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            @endif
-        </ul>
-    </div>
-</div>
-                <div class="team-four__content">
-                    <h4><a href="">{{ $instructor->name }}</a></h4>
-                    <span>{{ $instructor->email ?? 'tidak tersedia' }}</span>
-                </div>
-            </div>
-        </div>
-        @empty
-        <div class="swiper-slide">
-            <div class="team-seven__item">
-                <div class="team-seven__image image">
-                    <img src="{{ asset('learnit/assets/images/team/team-seven-image1.jpg') }}" alt="image">
-                    <div class="team-two__share">
-                        <a class="share-icon" href="#0"><i class="fa-light fa-share-nodes"></i></a>
-                        <ul>
-                            <li>
-                                <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#0"><i class="fa-brands fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#0"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="team-four__content">
-                    <h4><a href="team-details.html">Default Instructor</a></h4>
-                    <span>Lead Teacher</span>
-                </div>
-            </div>
-        </div>
-        @endforelse
-    </div>
-</div>
-                       
-               
+                        @forelse(App\Models\User::take(6)->get() as $instructor)
+                        <div class="swiper-slide">
+                            <div class="team-seven__item">
+                                <div class="team-seven__image image">
+                                    <div style="height: 380px; overflow: hidden; border-radius: 10px;">
+                                        @if($instructor->avatar_url)
+                                            <img src="{{ asset('storage/' . $instructor->avatar_url) }}" alt="{{ $instructor->name }}" 
+                                                style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+                                        @else
+                                            <img src="{{ asset('learnit/assets/images/team/team-seven-image1.jpg') }}" alt="Default instructor image"
+                                                style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+                                        @endif
+                                    </div>
+                                    <div class="team-two__share">
+                                        <a class="share-icon" href="#0"><i class="fa-light fa-share-nodes"></i></a>
+                                        <ul>
+                                            @if($instructor->facebook_url)
+                                            <li>
+                                                <a href="{{ $instructor->facebook_url }}"><i class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            @endif
+                                            @if($instructor->instagram_url)
+                                            <li>
+                                                <a href="{{ $instructor->instagram_url }}"><i class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                            @endif
+                                            @if($instructor->linkedin_url)
+                                            <li>
+                                                <a href="{{ $instructor->linkedin_url }}"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            @endif
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-four__content">
+                                    <h4><a href="">{{ $instructor->name }}</a></h4>
+                                    <span>{{ $instructor->email ?? 'tidak tersedia' }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        @empty
+                        <div class="swiper-slide">
+                            <div class="team-seven__item">
+                                <div class="team-seven__image image">
+                                    <img src="{{ asset('learnit/assets/images/team/team-seven-image1.jpg') }}" alt="image">
+                                    <div class="team-two__share">
+                                        <a class="share-icon" href="#0"><i class="fa-light fa-share-nodes"></i></a>
+                                        <ul>
+                                            <li>
+                                                <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#0"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-four__content">
+                                    <h4><a href="team-details.html">Default Instructor</a></h4>
+                                    <span>Lead Teacher</span>
+                                </div>
+                            </div>
+                        </div>
+                        @endforelse
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Team area end here -->
+        </div>
+    </div>
+</section>
+<!-- Team area end here -->
 
-        <section class="blog-two-area pt-120 pb-120">
-            <div class="container">
-                <div class="section-header mb-60 text-center">
-                    <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Aktivitas</h5>
-                    <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Lihat Aktivitas Terbaru Kami
-                    </h2>
-                </div>
+<section id="activities" class="blog-two-area pt-120 pb-120">
+    <div class="container">
+        <div class="section-header mb-60 text-center">
+            <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Aktivitas</h5>
+            <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Lihat Aktivitas Terbaru Kami
+            </h2>
+        </div>
 
         <div class="row g-4">
             @forelse(App\Models\Activity::latest()->take(3)->get() as $activity)
@@ -394,16 +391,16 @@
                     <div class="blog-two__item">
                         <a href="{{ route('activity.show', $activity->id) }}" class="blog__image d-block image radius0">
                             @if($activity->image)
-    <div style="height: 220px; overflow: hidden;">
-        <img src="{{ asset('storage/' . $activity->image) }}" alt="{{ $activity->title }}" 
-             style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </div>
-@else
-    <div style="height: 220px; overflow: hidden;">
-        <img src="{{ asset('learnit/assets/images/blog/blog-six-image1.jpg') }}" 
-             alt="default image" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </div>
-@endif
+                            <div style="height: 220px; overflow: hidden;">
+                                <img src="{{ asset('storage/' . $activity->image) }}" alt="{{ $activity->title }}" 
+                                    style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                            </div>
+                            @else
+                            <div style="height: 220px; overflow: hidden;">
+                                <img src="{{ asset('learnit/assets/images/blog/blog-six-image1.jpg') }}" 
+                                    alt="default image" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                            </div>
+                            @endif
                         </a>
                         <div class="blog-two__content p-4">
                             <a href="#0" class="tag">{{ $activity->category ?? "Tidak Ada" }}</a>
@@ -439,72 +436,70 @@
         @endif
     </div>
 </section>
-            </div>
-        </section>
-        <section class="testimonial-seven-area sub-bg-two pt-120 pb-120 bg-image"
-        data-background="{{ asset('learnit/assets/images/bg/ellipse-bg.png') }}">
-        <div class="testimonial-seven__shape1">
-            <img class="sway__animationX" src="{{ asset('learnit/assets/images/shape/courses-seven-shape1.png') }}" alt="shape">
+
+<section id="testimonials" class="testimonial-seven-area sub-bg-two pt-120 pb-120 bg-image"
+data-background="{{ asset('learnit/assets/images/bg/ellipse-bg.png') }}">
+    <div class="testimonial-seven__shape1">
+        <img class="sway__animationX" src="{{ asset('learnit/assets/images/shape/courses-seven-shape1.png') }}" alt="shape">
+    </div>
+    <div class="testimonial-seven__shape2">
+        <img class="animation__rotate" src="{{ asset('learnit/assets/images/shape/courses-seven-shape2.png') }}" alt="shape">
+    </div>
+    <div class="testimonial-seven__shape3">
+        <img class="animation__rotateY" src="{{ asset('learnit/assets/images/shape/courses-seven-shape3.png') }}" alt="shape">
+    </div>
+    <div class="container">
+        <div class="section-header mb-60 text-center">
+            <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">TESTIMONIALS</h5>
+            <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"> Apa Yang Mereka Katakan tentang TK Khalifah</h2>
         </div>
-        <div class="testimonial-seven__shape2">
-            <img class="animation__rotate" src="{{ asset('learnit/assets/images/shape/courses-seven-shape2.png') }}" alt="shape">
-        </div>
-        <div class="testimonial-seven__shape3">
-            <img class="animation__rotateY" src="{{ asset('learnit/assets/images/shape/courses-seven-shape3.png') }}" alt="shape">
-        </div>
-        <div class="container">
-            <div class="section-header mb-60 text-center">
-                <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">TESTIMONIALS</h5>
-                <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"> Apa Yang Mereka Katakan tentang TK Khalifah</h2>
-            </div>
-            <div class="swiper testimonial-seven__slider">
-              
-<div class="swiper-wrapper">
-    @foreach($testimonials as $testimonial)
-    <div class="swiper-slide">
-        <div class="testimonial-seven__item">
-            <div class="d-flex align-items-center gap-4 justify-content-between mb-15">
-                <div class="star">
-                    @for($i = 1; $i <= 5; $i++)
-                        @if($i <= $testimonial->rating)
-                            <i class="fa-sharp fa-solid fa-star"></i>
-                        @else
-                            <i class="fa-sharp fa-solid fa-star disabled"></i>
-                        @endif
-                    @endfor
+        <div class="swiper testimonial-seven__slider">
+            <div class="swiper-wrapper">
+                @foreach($testimonials as $testimonial)
+                <div class="swiper-slide">
+                    <div class="testimonial-seven__item">
+                        <div class="d-flex align-items-center gap-4 justify-content-between mb-15">
+                            <div class="star">
+                                @for($i = 1; $i <= 5; $i++)
+                                    @if($i <= $testimonial->rating)
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                    @else
+                                        <i class="fa-sharp fa-solid fa-star disabled"></i>
+                                    @endif
+                                @endfor
+                            </div>
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.5">
+                                    <path
+                                        d="M21.5998 15.1662C21.4359 21.2706 20.2326 27.1028 17.1618 32.4687C15.0391 36.1766 11.8636 38.7708 8.31789 40.9881C8.09312 41.1284 7.80413 41.3886 7.55907 41.1588C7.2836 40.9002 7.52189 40.5673 7.66216 40.3087C8.9449 37.9646 10.3121 35.6645 11.4292 33.2309C12.6528 30.564 13.6212 27.811 14.2567 24.9396C14.4257 24.1774 14.255 24.0929 13.535 24.2484C7.64188 25.526 2.16112 21.8976 1.00852 15.9858C-0.0849304 10.38 3.84608 4.78603 9.51275 3.88694C15.9196 2.86954 21.5491 7.65063 21.5998 14.1522C21.6015 14.4902 21.5998 14.8282 21.5998 15.1662Z"
+                                        fill="oklch(0.828 0.189 84.429)" />
+                                    <path
+                                        d="M44.25 15.2202C44.0793 21.5916 42.7949 27.6571 39.3912 33.1581C37.3175 36.5077 34.3228 38.8501 31.0746 40.9288C30.816 41.0945 30.4729 41.4375 30.1856 41.1198C29.9253 40.8325 30.2346 40.4877 30.3884 40.1987C31.6559 37.8462 33.0401 35.5562 34.1403 33.1142C35.3351 30.4642 36.2917 27.7382 36.9153 24.8939C37.0775 24.1536 36.8967 24.0827 36.2224 24.2415C30.2836 25.6358 24.4277 21.6338 23.5556 15.4348C22.7985 10.0537 26.7751 4.68115 32.1359 3.89022C38.7118 2.92353 44.2162 7.65053 44.25 14.2923C44.25 14.6016 44.25 14.9109 44.25 15.2202Z"
+                                        fill="oklch(0.828 0.189 84.429)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p>{!! $testimonial->content !!}</p>
+                        <div class="d-flex align-items-center gap-3 mt-30">
+                            @if($testimonial->image)
+                                <img src="{{ asset('storage/' . $testimonial->image) }}" alt="{{ $testimonial->name }}">
+                            @else
+                                <img src="{{ asset('assets/images/testimonial/default-avatar.png') }}" alt="{{ $testimonial->name }}">
+                            @endif
+                            <div class="testi-info">
+                                <h4>{{ $testimonial->name }}</h4>
+                                <p class="fs-14">{{ $testimonial->position }}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.5">
-                        <path
-                            d="M21.5998 15.1662C21.4359 21.2706 20.2326 27.1028 17.1618 32.4687C15.0391 36.1766 11.8636 38.7708 8.31789 40.9881C8.09312 41.1284 7.80413 41.3886 7.55907 41.1588C7.2836 40.9002 7.52189 40.5673 7.66216 40.3087C8.9449 37.9646 10.3121 35.6645 11.4292 33.2309C12.6528 30.564 13.6212 27.811 14.2567 24.9396C14.4257 24.1774 14.255 24.0929 13.535 24.2484C7.64188 25.526 2.16112 21.8976 1.00852 15.9858C-0.0849304 10.38 3.84608 4.78603 9.51275 3.88694C15.9196 2.86954 21.5491 7.65063 21.5998 14.1522C21.6015 14.4902 21.5998 14.8282 21.5998 15.1662Z"
-                            fill="oklch(0.828 0.189 84.429)" />
-                        <path
-                            d="M44.25 15.2202C44.0793 21.5916 42.7949 27.6571 39.3912 33.1581C37.3175 36.5077 34.3228 38.8501 31.0746 40.9288C30.816 41.0945 30.4729 41.4375 30.1856 41.1198C29.9253 40.8325 30.2346 40.4877 30.3884 40.1987C31.6559 37.8462 33.0401 35.5562 34.1403 33.1142C35.3351 30.4642 36.2917 27.7382 36.9153 24.8939C37.0775 24.1536 36.8967 24.0827 36.2224 24.2415C30.2836 25.6358 24.4277 21.6338 23.5556 15.4348C22.7985 10.0537 26.7751 4.68115 32.1359 3.89022C38.7118 2.92353 44.2162 7.65053 44.25 14.2923C44.25 14.6016 44.25 14.9109 44.25 15.2202Z"
-                            fill="oklch(0.828 0.189 84.429)" />
-                    </g>
-                </svg>
+                @endforeach
             </div>
-            <p>{!! $testimonial->content !!}</p>
-            <div class="d-flex align-items-center gap-3 mt-30">
-                @if($testimonial->image)
-                    <img src="{{ asset('storage/' . $testimonial->image) }}" alt="{{ $testimonial->name }}">
-                @else
-                    <img src="{{ asset('assets/images/testimonial/default-avatar.png') }}" alt="{{ $testimonial->name }}">
-                @endif
-                <div class="testi-info">
-                    <h4>{{ $testimonial->name }}</h4>
-                    <p class="fs-14">{{ $testimonial->position }}</p>
-                </div>
-            </div>
+        </div>
+        <div class="text-center mt-60">
+            <div class="dot testimonial-seven__dot"></div>
         </div>
     </div>
-    @endforeach
-</div>
-            </div>
-            <div class="text-center mt-60">
-                <div class="dot testimonial-seven__dot"></div>
-            </div>
-        </div>
-    </section>
+</section>
 @endsection

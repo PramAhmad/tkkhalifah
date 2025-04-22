@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="{{ asset('learnit/assets/css/nice-select.css') }}">
     <!-- Style css -->
     <link rel="stylesheet" href="{{ asset('learnit/assets/css/style.css') }}">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -102,15 +107,13 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="#0">Home </a>
-                             
+                                <a href="{{ url('/') }}">Home</a>
                             </li>
                             <li>
-                                <a href="#about">Tentang Kami </a>
-                             
+                                <a href="#about">Tentang Kami</a>
                             </li>
                             <li>
-                                <a href="#0">Akademik <i class="fa-solid fa-angle-down"></i></a>
+                                <a href="#courses">Akademik <i class="fa-solid fa-angle-down"></i></a>
                                 <ul class="sub-menu">
                                     @php
                                         $categories = \App\Models\Feature::all();
@@ -122,19 +125,15 @@
                                         </a>
                                     </li>
                                     @endforeach
-                                  
                                 </ul>
                             </li>
-                        
                             <li>
-                                <a href="#0">Aktivitas</a>
-                                
+                                <a href="#activities">Aktivitas</a>
                             </li>
                             <li>
-                                <a href="#0">Testimoni </a>
-                               
+                                <a href="#testimonials">Testimoni</a>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -154,7 +153,7 @@
                         </svg>
                     </button>
                     <div class="menu-btns d-none d-lg-flex">
-                        <a class="active" href="pricing.html">Try For Free</a>
+                        <a class="active" href="{{ route('pendaftaran.index') }}">Daftar Sekarang</a>
                     </div>
                     <button class="menubars" type="button" data-bs-toggle="offcanvas" data-bs-target="#menubar">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,62 +174,73 @@
     <!-- Sidebar area start here -->
     <div class="sidebar-area offcanvas offcanvas-end" id="menubar">
         <div class="offcanvas-header">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo/logo-light.svg" alt="logo">
+            <a href="{{ url('/') }}" class="logo">
+                <img src="{{ asset('learnit/assets/images/logo/logo-light.svg') }}" alt="logo">
             </a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i
                     class="fa-regular fa-xmark"></i></button>
         </div>
         <div class="offcanvas-body sidebar__body">
-            <div class="mobile-menu overflow-hidden"></div>
-            <div class="d-none d-lg-block">
-                <h5 class="text-white mb-20">About Us</h5>
-                <p class="paragraph-light fs-16">
-                    Unleash the full potential of your website and elevate its online presence with our comprehensive
-                    online courses.
-                </p>
+            <div class="mobile-menu overflow-hidden">
+                <ul>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li>
+                        <a href="#courses">Akademik <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            @php
+                                $categories = \App\Models\Feature::all();
+                            @endphp
+                            @foreach ($categories as $category)
+                            <li>
+                                <a href="{{ route('front.category', $category->id) }}">
+                                    {{ $category->name }}
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </li>
+                    <li><a href="#activities">Aktivitas</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
+                    <li><a href="{{ route('pendaftaran.index') }}" class="highlight-item">Daftar Sekarang</a></li>
+                </ul>
             </div>
-            <div class="sidebar__search d-block d-lg-none">
-                <input type="text" placeholder="Search here..">
-                <button><i class="fa-regular fa-magnifying-glass"></i></button>
-            </div>
+            
             <div class="sidebar__contact-info mt-30">
                 <h5 class="text-white mb-20">Contact Info</h5>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> <a href="#0">example@example.com</a>
+                    <li><i class="fa-solid fa-location-dot"></i> <a href="#0">Tasikmalaya</a>
                     </li>
-                    <li class="py-2"><i class="fa-solid fa-phone-volume"></i> <a href="tel:+912659302003">+91
-                            2659
-                            302 003</a>
+                    <li class="py-2"><i class="fa-solid fa-phone-volume"></i> <a href="tel:+628591348483542">+62 859 134 848 3542</a>
                     </li>
-                    <li><i class="fa-solid fa-paper-plane"></i> <a href="#0">info.company@gmail.com</a>
+                    <li><i class="fa-solid fa-paper-plane"></i> <a href="mailto:info@example.com">info@example.com</a>
                     </li>
                 </ul>
             </div>
-            <div class="sidebar__btns my-4">
-                <a href="sign-up.html">Sign Up</a>
-                <a class="sign-in" href="sign-in.html">Sign In</a>
-            </div>
-            <div class="sidebar__socials">
+            
+            <div class="sidebar__socials mt-30">
+                <h5 class="text-white mb-20">Ikuti Kami</h5>
                 <ul>
                     <li>
-                        <a href="#0">
+                        <a href="https://www.facebook.com/hmsi.unsil" target="_blank">
                             <i class="fa-brands text-white fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#0">
+                        <a href="https://twitter.com/hmsi_unsil" target="_blank">
                             <i class="fa-brands text-white fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#0">
-                            <i class="fa-brands text-white fa-linkedin-in"></i>
+                        <a href="https://www.instagram.com/hmsi_unsil" target="_blank">
+                            <i class="fa-brands text-white fa-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#0">
-                            <i class="fa-brands text-white fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/channel/UC-example" target="_blank">
+                            <i class="fa-brands text-white fa-youtube"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -255,15 +265,15 @@
 
   @yield('content')
     <!-- Footer area start here -->
-    <footer class="footer-six-area sub-bg-two">
+    <footer id="contact" class="footer-six-area sub-bg-two">
         <div class="footer-six__shape">
-            <img src="assets/images/shape/footer-six-shape.png" alt="shape">
+            <img src="{{ asset('learnit/assets/images/shape/footer-six-shape.png') }}" alt="shape">
         </div>
         <div class="container">
             <div class="footer__wrp pt-100 pb-100">
                 <div class="footer__item footer-about wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <a href="index.html" class="logo mb-30">
-                        <img src="assets/images/logo/logo.svg" alt="logo">
+                    <a href="{{ url('/') }}" class="logo mb-30">
+                        <img src="{{ asset('learnit/assets/images/logo/logo.svg') }}" alt="logo">
                     </a>
                     <p>HMSI Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, corrupti.</p>
                     <ul class="mt-25">
@@ -286,44 +296,49 @@
                                     d="M18.7719 14.1213C18.7388 14.0938 14.9913 11.4275 13.9794 11.5906C13.4913 11.6769 13.2125 12.01 12.6531 12.6762C12.4985 12.8617 12.3403 13.0443 12.1788 13.2238C11.8252 13.1086 11.4804 12.9682 11.1469 12.8038C9.42533 11.9656 8.03437 10.5747 7.19625 8.85312C7.03179 8.51964 6.89143 8.1748 6.77625 7.82125C6.96 7.65312 7.2175 7.43625 7.3275 7.34375C7.99062 6.7875 8.32312 6.50812 8.40938 6.01937C8.58625 5.0075 5.90625 1.26125 5.87875 1.2275C5.7567 1.05441 5.59775 0.910578 5.41336 0.806386C5.22897 0.702193 5.02374 0.640241 4.8125 0.625C3.72625 0.625 0.625 4.6475 0.625 5.32562C0.625 5.365 0.681875 9.3675 5.6175 14.3881C10.6325 19.3181 14.635 19.375 14.6744 19.375C15.3519 19.375 19.375 16.2737 19.375 15.1875C19.3596 14.9762 19.2975 14.771 19.1932 14.5866C19.0889 14.4022 18.945 14.2433 18.7719 14.1213ZM14.605 18.1213C14.0625 18.075 10.7 17.6319 6.5 13.5063C2.35437 9.28563 1.9225 5.9175 1.87937 5.39563C2.69861 4.10978 3.68799 2.94064 4.82062 1.92C4.84562 1.945 4.87875 1.9825 4.92125 2.03125C5.78989 3.21702 6.53817 4.48642 7.155 5.82062C6.95441 6.02242 6.7424 6.21253 6.52 6.39C6.17512 6.65278 5.85843 6.95063 5.575 7.27875C5.52704 7.34604 5.4929 7.42217 5.47456 7.50274C5.45621 7.5833 5.45403 7.66671 5.46812 7.74813C5.60039 8.32108 5.80297 8.87549 6.07125 9.39875C7.03243 11.3725 8.62735 12.9672 10.6012 13.9281C11.1244 14.1968 11.6788 14.3996 12.2519 14.5319C12.3333 14.5463 12.4168 14.5443 12.4974 14.5259C12.578 14.5075 12.6541 14.4732 12.7213 14.425C13.0505 14.1404 13.3494 13.8225 13.6131 13.4762C13.8094 13.2425 14.0712 12.9306 14.1706 12.8425C15.5082 13.4587 16.7805 14.2079 17.9681 15.0787C18.02 15.1225 18.0569 15.1562 18.0812 15.1781C17.0606 16.3111 15.8912 17.3007 14.605 18.12V18.1213ZM14.375 9.375H15.625C15.6235 8.04937 15.0962 6.77847 14.1589 5.84111C13.2215 4.90375 11.9506 4.37649 10.625 4.375V5.625C11.6193 5.62599 12.5725 6.0214 13.2756 6.72445C13.9786 7.42749 14.374 8.38074 14.375 9.375Z"
                                     fill="oklch(0.828 0.189 84.429)" />
                             </svg>
-                            <a href="tel:+2086660112" class="p-0">+62 859 134 848 3542</a>
+                            <a href="tel:+628591348483542" class="p-0">+62 859 134 848 3542</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <h3 class="footer-title">Quick Link</h3>
+                    <h3 class="footer-title">Menu</h3>
                     <ul>
-                        <li><a href="about.html"><i class="fa-regular fa-angles-right me-1"></i>About Learnit</a></li>
-                        <li><a href="course.html"><i class="fa-regular fa-angles-right me-1"></i> Our Courses</a>
-                        </li>
-                        <li><a href="team.html"><i class="fa-regular fa-angles-right me-1"></i> Instructor</a>
-                        </li>
-                        <li><a href="team-details.html"><i class="fa-regular fa-angles-right me-1"></i> Instructor
-                                Details</a>
-                        </li>
-                        <li><a href="contact.html"><i class="fa-regular fa-angles-right me-1"></i> Contact Us</a></li>
+                        <li><a href="{{ url('/') }}"><i class="fa-regular fa-angles-right me-1"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa-regular fa-angles-right me-1"></i>Tentang Kami</a></li>
+                        <li><a href="#courses"><i class="fa-regular fa-angles-right me-1"></i>Akademik</a></li>
+                        <li><a href="#activities"><i class="fa-regular fa-angles-right me-1"></i>Aktivitas</a></li>
+                        <li><a href="#testimonials"><i class="fa-regular fa-angles-right me-1"></i>Testimoni</a></li>
                     </ul>
                 </div>
                 <div class="footer__item item-sm wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                    <h3 class="footer-title">Resources</h3>
+                    <h3 class="footer-title">Akademik</h3>
                     <ul>
-                        <li><a href="faq.html"><i class="fa-regular fa-angles-right me-1"></i> FAQ’s</a></li>
-                        <li><a href="privacy.html"><i class="fa-regular fa-angles-right me-1"></i>
-                                Privacy Policy</a>
+                        @php
+                            $categories = \App\Models\Feature::take(5)->get();
+                        @endphp
+                        @forelse($categories as $category)
+                        <li>
+                            <a href="{{ route('front.category', $category->id) }}">
+                                <i class="fa-regular fa-angles-right me-1"></i>{{ $category->name }}
+                            </a>
                         </li>
-                        <li><a href="error.html"><i class="fa-regular fa-angles-right me-1"></i> Terms & Condition</a>
-                        </li>
-                        <li><a href="error.html"><i class="fa-regular fa-angles-right me-1"></i> Register/Login</a></li>
-                        <li><a href="coming-soon.html"><i class="fa-regular fa-angles-right me-1"></i> Coming Soon</a>
-                        </li>
+                        @empty
+                        <li><a href="#courses"><i class="fa-regular fa-angles-right me-1"></i>Belum ada data</a></li>
+                        @endforelse
                     </ul>
                 </div>
                 <div class="footer__item newsletter-six wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                    <h3 class="footer-title">Join Our Newsletter</h3>
-                    <p class="mb-20">Lorem ipsum dolor amet o adi pisicing elit sed eiusm. </p>
+                    <h3 class="footer-title">Social Media</h3>
+                    <p class="mb-20">Ikuti kami di sosial media untuk mendapatkan informasi terbaru. </p>
+                    <div class="social-icons mb-4">
+                        <a href="https://www.facebook.com/hmsi.unsil" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/hmsi_unsil" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/hmsi_unsil" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC-example" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
                     <div class="footer-newsletter__six">
-                        <input type="text" placeholder="Email Address">
-                        <button>Sing Up</button>
+                        <input type="email" placeholder="Email Address">
+                        <button>Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -333,18 +348,18 @@
                 <div
                     class="d-flex gap-1 flex-wrap align-items-center justify-content-md-between justify-content-center">
                     <p class="wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">&copy; All Copyright 2024
-                        by <a href="#0" class="primary-color">Learnit</a></p>
+                        by <a href="#0" class="primary-color">HMSI UNSIL</a></p>
                     <div class="social-icons wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#0"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#0"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/hmsi.unsil" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/hmsi_unsil" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/hmsi_unsil" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC-example" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                     <ul class="d-flex footer-six__info align-items-center gap-2 wow fadeInDown" data-wow-delay="400ms"
                         data-wow-duration="1500ms">
-                        <li><a href="#0">Privacy Policy</a></li>
+                        <li><a href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
                         <li><span class="info-line"></span></li>
-                        <li><a href="#0">Terms & Condition</a></li>
+                        <li><a href="{{ url('terms-and-conditions') }}">Terms & Condition</a></li>
                     </ul>
                 </div>
             </div>
