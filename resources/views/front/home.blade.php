@@ -391,7 +391,7 @@
             @forelse(App\Models\Activity::latest()->take(3)->get() as $activity)
                 <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="blog-two__item">
-                        <a href="{{ route('activity.show', $activity->id) }}" class="blog__image d-block image radius0">
+                        <p class="blog__image d-block image radius0">
                             @if($activity->image)
                             <div style="height: 220px; overflow: hidden;">
                                 <img src="{{ asset('storage/' . $activity->image) }}" alt="{{ $activity->title }}" 
@@ -403,7 +403,7 @@
                                     alt="default image" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
                             </div>
                             @endif
-                        </a>
+                        </p>
                         <div class="blog-two__content p-4">
                             <a href="#0" class="tag">{{ $activity->category ?? "Tidak Ada" }}</a>
                             <h3><a href="{{ route('activity.show', $activity->id) }}" class="primary-hover">{{ $activity->title }}</a></h3>
