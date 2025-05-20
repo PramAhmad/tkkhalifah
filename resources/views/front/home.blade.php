@@ -43,8 +43,8 @@
                         <img class="about-dots sway__animation" src="{{ asset('learnit/assets/images/shape/about-dots.png') }}"
                             alt="shape">
                         <img class="about-circle" src="{{ asset('learnit/assets/images/shape/about-circle.png') }}" alt="shape">
-                        <img src="{{ asset('images/about1.jpeg') }}" alt="image">
-                        <img class="sm-image" src="{{ asset('images/about3.jpeg') }}" alt="image">
+                        <img src="{{ asset('images/about3.jpeg') }}" alt="image">
+                        {{-- <img class="sm-image" src="{{ asset('images/about3.jpeg') }}" alt="image"> --}}
                         <div class="count-info">
                             <h5 class="primary-color fs-28"><span class="count primary-color">25</span>+</h5>
                             <span class="fs-14">Years Experience</span>
